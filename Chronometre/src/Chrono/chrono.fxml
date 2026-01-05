@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="20" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Chrono.ChronoController"
+      stylesheets="@style.css">
+
+    <Label fx:id="timeLabel"
+           text="00:00:00"
+           styleClass="time-label"/>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Start" onAction="#startChrono" styleClass="btn-start"/>
+        <Button text="Stop"  onAction="#stopChrono"  styleClass="btn-stop"/>
+        <Button text="Reset" onAction="#resetChrono" styleClass="btn-reset"/>
+    </HBox>
+
+</VBox>
